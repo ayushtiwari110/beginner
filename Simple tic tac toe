@@ -1,3 +1,4 @@
+# Pre-defining variables for program
 cells = input("Enter cells:")
 row = [cells[0:3], cells[3:6], cells[6:9]]
 col = [cells[0:7:3], cells[1:8:3], cells[2:9:3]]
@@ -6,6 +7,13 @@ diag2 = cells[2] + cells[4] + cells[6]
 diag = [diag1, diag2]
 matrix = [row, col, diag]
 xwin = owin = blanks = x_ = o_ = 0
+# Game State print
+print("---------")
+print("|" + " " + cells[0] +" " + cells[1] + " " + cells[2] + " " +"|")
+print("|" + " " + cells[3] +" " + cells[4] + " " + cells[5] + " " +"|")
+print("|" + " " + cells[6] +" " + cells[7] + " " + cells[8] + " " +"|")
+print("---------")
+#Loop print
 for c in cells:
     if c == "X":
         x_ += 1
