@@ -43,5 +43,5 @@ if x_ - o_ == 1 or x_ - o_ == 0 or x_ - o_ == -1:
             print("Draw")
         elif blanks > 0:
             print("Game not finished")
-elif abs(x_-o_>2):
+elif abs(x_-o_>=2):
     print("Impossible")
